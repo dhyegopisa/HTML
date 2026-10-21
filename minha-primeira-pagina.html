@@ -1,36 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube Patinhas </title>
+    <!-- Uma breve descrição de que é o websaite que os mecanismos de pesquisa PODEM usar -->
+    <meta name = "description" content = "Clube de cachorros fofinhos.">
+    <title>Clube Patinhas</title>
 </head>
 <body>
     <h1>Clube Patinhas</h1>
-    <!-- h1 é uma tag de titulo -->
-    <!-- um unico h1 por paginas: o assunto principal-->
-    <!-- existe 6 niveis de titulo: h1, h2, h3, h4, h5, h6 -->
-    <!-- nao se pula rdem: depois de h1, vem h2, depois h3, depois h4, depois h5, depois h6 -->
-    <h2> Como cuidar</h2>
-    <h3> Alimentação</h3>
-    <p>escove os dentes do seu pet <strong>duas vezes por semana</strong> </p>
-    <h3> Passeios</h3>
-    <p> filhotes só passeiam<strong>com as vascinas em dia</strong> </p>
-    <!-- p é uma tag de paragrafo -->
-
-    <h2> raças de cachorro</h2>
+    <h2>Como Cuidar</h2>
+    <p>Um cachorro saudável precisa de comida certa, água fresca, passeios e carinho.</p>
+    <h3>Alimentação</h3>
+    <p>Ofereça ração adequada à idade e ao porte do cão e deixe sempre água limpa à disposição.</p>
+    <p>Escove os dentes <em>só com pastas para cães</em></p>
     <ul>
-        <li>beagle</li>
-        <li>poodle</li>
-        <li>vira-lata</li>
+        <li>Filhotes comem várias vezes ao dia, em porções pequenas.</li>
+        <li>Adultos costumam comer duas vezes ao dia.</li>
+        <ul>
+            <li>Chocolate;</li>
+            <li>Uva e Uva-passa;</li>
+            <li>Cebola e alho;</li>
+        </ul>
     </ul>
-
+    <h3>Passeios</h3>
+    <p>Filhotes só passeiam <strong>com as vacinas em dia</strong></p>
+    <!-- A tag <strong> é usada para negrito e a tag <em> para itálico -->
+    <p>Passeios são importantes porque gastam energia, fortalecem os músculos e ajudam o cão a concviver com outras pessoas e animais.</p>
+    <ol>
+        <li>Pegar a guia</li>
+        <li>Passear, de preferência fora dos horários mais quentes.</li>
+        <li>Dar água ao voltar para casa</li>
+    </ol>
+    <h2>Raças</h2>
+    <ul>
+        <li>Labragordo</li>
+        <li>Resendog</li>
+        <li>Nalaimensa</li>
+    </ul>
+    <figure>
+        <img src="IMG_3943.jpg" alt="Um cachorro da raça Beagle." height="500" width="350"/>
+        <figcaption>Nala gorda</figcaption>
+    </figure>
     <dl>
-        <dt>filhotes</dt>
-        <dd>animais jovens e pequenos</dd>
+        <dt>Filhote</dt>
+        <dd>Cão com menos de um ano</dd>
     </dl>
-
-    <a href="https://pt.wikipedia.org/wiki/C%C3%A3o" target="_blank" rel="noopener noreferrer"> - Wikipédia sobre cães</a>
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fcaes%2Fcomo-cuidar-de-um-filhote-de-cachorro%2F&psig=AOvVaw0g1k5J6X7Z8z9x4Q5G5G5G&ust=1697059200000000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjY9J6P8f4CFQAAAAAdAAAAABAE" alt="cachorro" width="500" height="600">
+    <a href="https://pt.wikipedia.org/wiki/C%C3%A3o" target="_blank" rel="noopener noreferrer">Sobre cães - wikipedia</a>
+    <!-- A tag a é usada para criar links -->
+    <!-- No atributo href, colocamos o endereço da pagina que queremos redirecionar-->
+    <!-- O atributo target é usado para indicar se, ao clicar no link, a pagina abrirá na mesma aba/janela ou em uma nova aba/janela-->
+    <!-- O atributo rel="noopener noreferrer" é usado para especificar a relação entre a página atual e a página linkada -->
+    <figure>
+        <img src="HUSKY.jpg" alt="Um cachorro caramelo, representante oficial do Brasil." width="300">
+    </figure>
+    <!-- A tag img é usada para inserir imagens -->
 </body>
+<table border="1">
+    <caption>Raças de cães</caption>
+    <thead>
+        <tr>
+            <th>Raça</th>
+            <th>Origem</th>
+            <th>Altura</th>
+            <th>Peso</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rex</td>
+            <td>Canadá</td>
+            <td>55-62 cm</td>
+            <td>25-36 kg</td>
+        </tr>
+        <tr>
+            <td>LabraGordo</td>
+            <td>Inglaterra</td>
+            <td>33-41 cm</td>
+            <td>9-11 kg</td>
+        </tr>
+        <tr>
+            <td>Husky Siberiano</td>
+            <td>Rússia</td>
+            <td>50-60 cm</td>
+            <td>20-27 kg</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Fonte: Associação Brasileira de Cinofilia (ABC)</td>
+        </tr>
+    </tfoot>
+
+    <h2>Formulário de Contato</h2>
+    <form action="enviar.php" method="post">    
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
 </html>
